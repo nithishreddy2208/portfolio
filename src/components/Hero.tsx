@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import profilePhoto from "@/assets/Pass Photo edited.png";
 // Using direct upload URL for profile photo
 
 const Hero = () => {
@@ -14,12 +15,11 @@ const Hero = () => {
       <div className="container mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           {/* Profile Image */}
-          <div className="w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden border-2 border-primary/20">
+          <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-2 border-primary/20 flex justify-center items-center">
             <img 
-              src="/lovable-uploads/82a9ee15-8079-4fc3-87dd-9e47b3340613.png" 
+              src={profilePhoto} 
               alt="Nama Nithish Reddy" 
-              className="w-full h-full object-cover filter-none"
-              style={{ imageRendering: 'crisp-edges' }}
+              className="w-full h-full object-cover"
             />
           </div>
 
@@ -43,12 +43,16 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="btn-primary group">
-              View My Projects
-              <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            <Button asChild size="lg" className="btn-primary group">
+              <a href="https://github.com/nithishreddy2208?tab=repositories" target="_blank" rel="noopener noreferrer">
+                View My Projects
+                <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="hover:bg-secondary">
-              Download Resume
+            <Button asChild variant="outline" size="lg" className="hover:bg-secondary">
+              <a href="/nithish-resume.pdf" download>
+                Download Resume
+              </a>
             </Button>
           </div>
 
