@@ -19,7 +19,7 @@ const Projects = () => {
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "WebRTC"],
       year: "2025",
       featured: true,
-      github: "#",
+      github: "https://github.com/nithishreddy2208/Med-Nexus.git",
       live: "#"
     },
     {
@@ -35,7 +35,7 @@ const Projects = () => {
       tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
       year: "2025",
       featured: false,
-      github: "https://github.com/nithishreddy2208",
+      github: "https://github.com/nithishreddy2208/portfolio",
       live: "#"
     },
     {
@@ -53,7 +53,7 @@ const Projects = () => {
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Geolocation API"],
       year: "2024",
       featured: false,
-      github: "#",
+      github: "https://github.com/nithishreddy2208/smart-attendence.git",
       live: "#"
     },
     {
@@ -71,7 +71,7 @@ const Projects = () => {
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "REST APIs"],
       year: "2024",
       featured: false,
-      github: "#",
+      github: "https://github.com/nithishreddy2208/RideAway.git",
       live: "#"
     }
   ];
@@ -145,13 +145,17 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-2">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Github className="h-4 w-4 mr-2" />
-                      View Code
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4 mr-2" />
+                        View Code
+                      </a>
                     </Button>
-                    <Button size="sm" className="flex-1 btn-primary">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
+                    <Button size="sm" className="flex-1 btn-primary" asChild>
+                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </a>
                     </Button>
                   </div>
                 </div>

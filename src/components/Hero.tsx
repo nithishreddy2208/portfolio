@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
-import profileAvatar from "@/assets/profile-avatar.jpg";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const Hero = () => {
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden card-glow">
             <img 
-              src={profileAvatar} 
+              src={profilePhoto} 
               alt="Nama Nithish Reddy" 
               className="w-full h-full object-cover"
             />
