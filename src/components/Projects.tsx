@@ -20,7 +20,7 @@ const Projects = () => {
       year: "2025",
       featured: true,
       github: "https://github.com/nithishreddy2208/Med-Nexus.git",
-      live: "#"
+      live: null
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ const Projects = () => {
       year: "2025",
       featured: false,
       github: "https://github.com/nithishreddy2208/portfolio",
-      live: "#"
+      live: null
     },
     {
       id: 3,
@@ -54,7 +54,7 @@ const Projects = () => {
       year: "2024",
       featured: false,
       github: "https://github.com/nithishreddy2208/smart-attendence.git",
-      live: "#"
+      live: null
     },
     {
       id: 4,
@@ -72,7 +72,7 @@ const Projects = () => {
       year: "2024",
       featured: false,
       github: "https://github.com/nithishreddy2208/RideAway.git",
-      live: "#"
+      live: null
     }
   ];
 
@@ -151,12 +151,14 @@ const Projects = () => {
                         View Code
                       </a>
                     </Button>
-                    <Button size="sm" className="flex-1 btn-primary" asChild>
-                      <a href={project.live} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Live Demo
-                      </a>
-                    </Button>
+                    {project.live && (
+                      <Button size="sm" className="flex-1 btn-primary" asChild>
+                        <a href={project.live} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Live Demo
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </CardContent>
