@@ -55,9 +55,9 @@ const Footer = () => {
           <div className="flex justify-center gap-8 text-sm text-muted-foreground pt-4 border-t border-border">
             <span>CGPA: 94%</span>
             <span>•</span>
-            <span>500+ LeetCode Problems</span>
+            <span>750+ LeetCode Problems</span>
             <span>•</span>
-            <span>MERN Stack Developer</span>
+            <span>Full Stack Developer</span>
           </div>
         </div>
       </div>

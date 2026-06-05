@@ -33,7 +33,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-            Computer Science Engineering Student | MERN Stack Developer
+            Software Engineer specializing in Full Stack Development, AI Integrations, and Scalable Web Applications
           </p>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -50,7 +50,12 @@ const Hero = () => {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="hover:bg-secondary">
-              <a href="/nithish-resume.pdf" download>
+              <a href="/Nithish_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                View Resume
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="hover:bg-secondary">
+              <a href="/Nithish_Resume.pdf" download>
                 Download Resume
               </a>
             </Button>

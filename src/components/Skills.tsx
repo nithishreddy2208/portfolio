@@ -8,38 +8,56 @@ const Skills = () => {
     {
       icon: Code,
       title: "Programming Languages",
-      skills: ["Java", "JavaScript", "C", "HTML", "CSS"],
+      skills: ["Java", "JavaScript", "TypeScript", "SQL"],
       color: "text-blue-500"
     },
     {
       icon: Globe,
-      title: "Web Technologies",
-      skills: ["React.js", "Node.js", "Express.js", "RESTful APIs"],
+      title: "Frontend Development",
+      skills: ["React.js", "Angular", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Responsive Design"],
       color: "text-green-500"
     },
     {
       icon: Database,
-      title: "Databases & Tools",
-      skills: ["MongoDB", "SQL", "Operating Systems", "Computer Networks", "DBMS"],
+      title: "Backend Development",
+      skills: ["Node.js", "Express.js", "REST APIs", "JWT Authentication", "Role-Based Access Control"],
       color: "text-purple-500"
     },
     {
+      icon: Database,
+      title: "Databases",
+      skills: ["MongoDB", "MongoDB Atlas", "MySQL"],
+      color: "text-cyan-500"
+    },
+    {
       icon: Brain,
-      title: "Core Competencies",
-      skills: ["Data Structures", "Algorithms", "Problem Solving", "Strong Analytical Abilities"],
+      title: "AI & LLM Engineering",
+      skills: ["OpenAI", "OpenRouter", "Gemini", "Ollama", "Prompt Engineering", "AI Integrations", "LLM Applications", "Generative AI"],
       color: "text-orange-500"
     },
     {
-      icon: Users,
-      title: "Soft Skills",
-      skills: ["Communication", "Interpersonal Skills", "Team Collaboration"],
+      icon: Brain,
+      title: "AI Systems & Applications",
+      skills: ["RAG", "Embeddings", "Vector Search", "Semantic Search", "Resume Analysis Systems", "Interview Preparation Systems", "AI Recommendation Engines"],
       color: "text-pink-500"
     },
     {
       icon: Trophy,
-      title: "Adaptability",
-      skills: ["Willing to Learn New Technologies", "Quick Learner", "Self-Motivated"],
+      title: "System Design & Architecture",
+      skills: ["Redis Caching", "Database Replication Concepts", "Replica Databases", "Queue-Based Processing", "BullMQ", "Background Workers", "Caching Strategies", "Scalable Architectures", "API Design"],
       color: "text-yellow-500"
+    },
+    {
+      icon: Globe,
+      title: "Cloud & Deployment",
+      skills: ["Vercel", "Render", "Cloudinary", "MongoDB Atlas", "CI/CD Concepts", "Environment Management"],
+      color: "text-indigo-500"
+    },
+    {
+      icon: Code,
+      title: "Developer Tools",
+      skills: ["Git", "GitHub", "Postman", "VS Code"],
+      color: "text-gray-400"
     }
   ];
 
@@ -52,10 +70,9 @@ const Skills = () => {
   ];
 
   const achievements = [
-    "Qualified JEE Mains Exam: secured round to 2024",
-    "Participant in Smart India Hackathon in 2024",
-    "2nd Prize in Technical Quiz in 2023",
-    "500+ Problems Solved on LeetCode"
+    "Solved 750+ Problems on LeetCode (Highest Rating: 1600)",
+    "Participant – Smart India Hackathon 2024",
+    "Participant – Healix Bug Bash Hackathon 2026"
   ];
 
   return (
@@ -103,29 +120,33 @@ const Skills = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-2xl">
                 <Trophy className="h-6 w-6 text-primary" />
-                LeetCode Achievement
+                LeetCode Statistics
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex items-center justify-between mb-4">
-                <div>
-                  <p className="text-lg font-semibold">Problems Solved</p>
-                  <p className="text-3xl font-bold gradient-text">500+</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+                <div className="text-center p-4 bg-background/50 rounded-lg">
+                  <p className="text-lg font-semibold text-muted-foreground">Problems Solved</p>
+                  <p className="text-4xl font-bold gradient-text">750+</p>
                 </div>
-                <div className="text-right">
-                  <p className="text-muted-foreground">Profile Link</p>
+                <div className="text-center p-4 bg-background/50 rounded-lg">
+                  <p className="text-lg font-semibold text-muted-foreground">Highest Rating</p>
+                  <p className="text-4xl font-bold gradient-text">1600</p>
+                </div>
+                <div className="text-center p-4 bg-background/50 rounded-lg">
+                  <p className="text-lg font-semibold text-muted-foreground">Profile</p>
                   <a 
                     href="https://leetcode.com/u/nithish_90301/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-primary-glow underline transition-colors"
+                    className="text-primary hover:text-primary-glow underline transition-colors text-xl font-medium"
                   >
                     @nithish_90301
                   </a>
                 </div>
               </div>
-              <Progress value={85} className="h-3" />
-              <p className="text-sm text-muted-foreground mt-2">
+              <Progress value={90} className="h-3" />
+              <p className="text-sm text-muted-foreground mt-2 text-center">
                 Consistently solving problems to improve algorithmic thinking and problem-solving skills
               </p>
             </CardContent>
@@ -145,8 +166,8 @@ const Skills = () => {
             <CardContent>
               <ul className="space-y-3">
                 {certifications.map((cert, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <li key={index} className="flex items-start gap-3 p-3 bg-background/50 rounded-lg hover:bg-background/80 transition-colors">
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <span className="text-sm text-muted-foreground">{cert}</span>
                   </li>
                 ))}
@@ -165,9 +186,9 @@ const Skills = () => {
             <CardContent>
               <ul className="space-y-3">
                 {achievements.map((achievement, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">{achievement}</span>
+                  <li key={index} className="flex items-start gap-3 p-3 bg-background/50 rounded-lg hover:bg-background/80 transition-colors">
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground font-medium">{achievement}</span>
                   </li>
                 ))}
               </ul>
