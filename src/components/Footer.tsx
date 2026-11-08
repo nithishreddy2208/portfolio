@@ -53,11 +53,11 @@ const Footer = () => {
 
           {/* Quick Stats */}
           <div className="flex justify-center gap-8 text-sm text-muted-foreground pt-4 border-t border-border">
-            <span>CGPA: 94%</span>
+            <span>CGPA: 9.38 / 10</span>
             <span>•</span>
-            <span>750+ LeetCode Problems</span>
+            <span>800+ LeetCode Problems</span>
             <span>•</span>
-            <span>Full Stack Developer</span>
+            <span>Full Stack AI Engineer</span>
           </div>
         </div>
       </div>

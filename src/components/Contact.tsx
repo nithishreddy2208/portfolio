@@ -111,7 +111,7 @@ const Contact = () => {
                 </div>
                 
                 <p className="text-sm text-muted-foreground">
-                  Available for internships, full-time opportunities, and freelance projects
+                  Open to full-time Full Stack and AI Engineering opportunities
                 </p>
               </div>
             </CardContent>

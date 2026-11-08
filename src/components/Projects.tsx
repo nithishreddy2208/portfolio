@@ -8,66 +8,58 @@ const Projects = () => {
     {
       id: 1,
       title: "JobHunt – AI-Powered Recruitment Platform",
-      description: "A full-stack AI-powered recruitment ecosystem for job seekers and recruiters featuring AI resume analysis, interview preparation, cover letter generation, and job recommendations.",
+      description: "A full-stack AI-powered recruitment platform with dedicated Job Seeker and Recruiter dashboards, built on a RAG pipeline that grounds every AI feature in real candidate and job data.",
       features: [
-        "AI Resume Analysis with intelligent parsing and feedback",
-        "AI Interview Preparation with personalized coaching",
-        "AI Cover Letter Generation tailored to job descriptions",
-        "AI Job Recommendations using advanced matching algorithms",
-        "Recruiter AI Hiring Dashboard with candidate insights",
-        "Candidate Match Scoring for optimal hiring decisions",
-        "Resume Parsing with automatic data extraction",
-        "Authentication & Authorization with role-based access",
-        "Redis Caching for optimized performance",
-        "BullMQ Background Jobs for async processing",
-        "MongoDB Atlas for scalable data storage",
-        "Cloudinary Integration for file management",
-        "OpenRouter-based AI Features for intelligent automation"
+        "Built a Retrieval-Augmented Generation (RAG) pipeline that embeds resumes and job descriptions as vectors and retrieves the most relevant context through semantic search",
+        "AI resume analysis, interview preparation, cover-letter generation and personalized job recommendations on top of the RAG layer",
+        "AI workloads run asynchronously on BullMQ background workers",
+        "JWT authentication, role-based authorization and Redis caching",
+        "Cloudinary file management, with document uploads secured by ClamAV malware scanning",
+        "Recruiter hiring insights on job postings and applicants"
       ],
-      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Redis", "BullMQ", "JWT", "Cloudinary", "OpenRouter", "Tailwind CSS"],
-      year: "2025",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "RAG", "Embeddings", "Redis", "BullMQ", "JWT", "Cloudinary", "OpenRouter"],
+      year: "2026",
       featured: true,
       status: "Live",
-      github: "https://github.com/nithishreddy2208",
+      github: "https://github.com/nithishreddy2208/JobHunt",
       live: "https://jobhunt-frontend-three.vercel.app/"
     },
     {
       id: 2,
-      title: "Heal-Sphere",
-      description: "A comprehensive healthcare platform for medical consultations, appointment management, and patient care coordination with modern UI/UX.",
+      title: "HelpDesk AI – Intelligent Customer Support Ticketing System",
+      description: "A full-stack customer support ticketing system with AI-assisted support, built with Java, Spring Boot, PostgreSQL and React.",
       features: [
-        "Real-time appointment booking and management",
-        "Patient profile and medical history tracking",
-        "Doctor-patient communication system",
-        "Prescription and medication management",
-        "Responsive design for mobile and desktop",
-        "Secure authentication and data protection"
+        "Spring Boot REST APIs and a React dashboard for customers, agents and admins",
+        "Ticket creation, assignment, SLA tracking and resolution",
+        "RAG pipeline over the knowledge base (PostgreSQL with pgvector) that suggests reply drafts",
+        "Few-shot prompting that auto-classifies ticket category and priority",
+        "SLA-based routing with a priority queue and round-robin agent assignment, with Redis caching",
+        "Secured with Spring Security, JWT authentication and role-based access control"
       ],
-      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-      year: "2025",
+      tech: ["Java", "Spring Boot", "Spring Security", "PostgreSQL", "pgvector", "Redis", "React", "LLM APIs"],
+      year: "2026",
       featured: false,
-      status: "Live",
+      status: "In Progress",
       github: "https://github.com/nithishreddy2208",
-      live: "https://heal-sphere-blue.vercel.app/"
+      live: null
     },
     {
       id: 3,
-      title: "Personal Portfolio",
-      description: "A modern, responsive portfolio website showcasing my projects and skills with beautiful animations, glassmorphism design, and clean architecture.",
+      title: "HealSphere – Healthcare Management System",
+      description: "A full-stack healthcare management platform with real-time video consultations for doctors, patients and administrators.",
       features: [
-        "Responsive design with modern UI/UX principles",
-        "Built with React and TypeScript for type safety",
-        "Tailwind CSS for beautiful styling and animations",
-        "Glassmorphism card effects and smooth transitions",
-        "Showcases projects, skills, and achievements",
-        "Optimized for performance and SEO"
+        "Appointment scheduling, prescriptions and patient record management",
+        "Secure JWT authentication and role-based access control across three user roles",
+        "WebRTC-based real-time video consultations between doctors and patients",
+        "Scalable Node.js and Express.js REST APIs for appointments, prescriptions and records",
+        "Optimized MongoDB schemas and query patterns for healthcare data"
       ],
-      tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "WebRTC", "JWT"],
       year: "2025",
       featured: false,
       status: "Live",
-      github: "https://github.com/nithishreddy2208/portfolio",
-      live: "https://nithishreddy-portfolio.vercel.app/"
+      github: "https://github.com/nithishreddy2208/Heal-Sphere",
+      live: "https://heal-sphere-blue.vercel.app/"
     },
     {
       id: 4,
@@ -118,7 +110,7 @@ const Projects = () => {
             <span className="gradient-text">Featured Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills in full-stack development
+            Recent projects across full-stack development, Java and Spring Boot, and applied AI
           </p>
         </div>
 

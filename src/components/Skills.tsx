@@ -8,71 +8,73 @@ const Skills = () => {
     {
       icon: Code,
       title: "Programming Languages",
-      skills: ["Java", "JavaScript", "TypeScript", "SQL"],
+      skills: ["Java (Core & Advanced)", "JavaScript (ES6+)", "TypeScript", "Python", "SQL", "C"],
       color: "text-blue-500"
-    },
-    {
-      icon: Globe,
-      title: "Frontend Development",
-      skills: ["React.js", "Angular", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Responsive Design"],
-      color: "text-green-500"
     },
     {
       icon: Database,
       title: "Backend Development",
-      skills: ["Node.js", "Express.js", "REST APIs", "JWT Authentication", "Role-Based Access Control"],
+      skills: ["Spring Boot", "Spring Security", "Microservices", "RESTful APIs", "Node.js", "Express.js", "JWT Authentication", "Role-Based Access Control"],
       color: "text-purple-500"
+    },
+    {
+      icon: Globe,
+      title: "Frontend Development",
+      skills: ["React.js", "Angular", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Electron", "Responsive Design"],
+      color: "text-green-500"
     },
     {
       icon: Database,
       title: "Databases",
-      skills: ["MongoDB", "MongoDB Atlas", "MySQL"],
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "MongoDB Atlas", "SQLite", "Indexing"],
       color: "text-cyan-500"
     },
     {
       icon: Brain,
       title: "AI & LLM Engineering",
-      skills: ["OpenAI", "OpenRouter", "Gemini", "Ollama", "Prompt Engineering", "AI Integrations", "LLM Applications", "Generative AI"],
+      skills: ["RAG", "Embeddings", "Vector & Semantic Search", "Prompt Engineering (Few-Shot, One-Shot, Chain-of-Thought)", "OpenAI & Anthropic APIs", "OpenRouter", "Gemini", "Ollama"],
       color: "text-orange-500"
     },
     {
       icon: Brain,
-      title: "AI Systems & Applications",
-      skills: ["RAG", "Embeddings", "Vector Search", "Semantic Search", "Resume Analysis Systems", "Interview Preparation Systems", "AI Recommendation Engines"],
+      title: "Agentic AI & AI Tools",
+      skills: ["AI Agents", "Agentic Workflows", "Model Context Protocol (MCP)", "Claude Code", "OpenAI Codex", "Cursor"],
       color: "text-pink-500"
     },
     {
       icon: Trophy,
       title: "System Design & Architecture",
-      skills: ["Redis Caching", "Database Replication Concepts", "Replica Databases", "Queue-Based Processing", "BullMQ", "Background Workers", "Caching Strategies", "Scalable Architectures", "API Design"],
+      skills: ["Redis Caching", "BullMQ", "Queue-Based Processing", "Background Workers", "Scalable API Design", "Database Replication", "Caching Strategies"],
       color: "text-yellow-500"
     },
     {
       icon: Globe,
-      title: "Cloud & Deployment",
-      skills: ["Vercel", "Render", "Cloudinary", "MongoDB Atlas", "CI/CD Concepts", "Environment Management"],
+      title: "DevOps & Cloud",
+      skills: ["Git", "GitHub", "Azure DevOps (Repos, Boards, Pipelines)", "CI/CD", "Vercel", "Render", "Cloudinary", "Postman"],
       color: "text-indigo-500"
     },
     {
-      icon: Code,
-      title: "Developer Tools",
-      skills: ["Git", "GitHub", "Postman", "VS Code"],
+      icon: Users,
+      title: "Testing & Practices",
+      skills: ["Unit & End-to-End Testing", "Playwright", "Code Review", "Agile/Scrum", "OOP", "DBMS", "Operating Systems", "Computer Networks"],
       color: "text-gray-400"
     }
   ];
 
   const certifications = [
-    "Java: Basics Java, Advanced Java, Data Structures class certificates",
-    "Web Development: HTML, CSS, JavaScript class certificates",
-    "Oracle Certifications: Database Design, SQL, PL/SQL",
+    "Claude 101 – Anthropic",
+    "Claude Code 101 – Anthropic",
     "AICTE Generative AI Certification: Beginner to Advanced",
-    "Competitive Programming: Participated in Codejam and CodeJam"
+    "Oracle Certifications: Database Design, SQL, PL/SQL",
+    "Java: Basics Java, Advanced Java, Data Structures class certificates",
+    "Web Development: HTML, CSS, JavaScript class certificates"
   ];
 
   const achievements = [
-    "Solved 750+ Problems on LeetCode (Highest Rating: 1600)",
-    "Participant – Smart India Hackathon 2024",
-    "Participant – Healix Bug Bash Hackathon 2026"
+    "Solved 800+ Data Structures and Algorithms problems on LeetCode and other competitive programming platforms",
+    "Highest LeetCode contest rating of 1600",
+    "Participant – Healix Bug Bash Hackathon 2026",
+    "Participant – Smart India Hackathon 2024"
   ];
 
   return (
@@ -127,7 +129,7 @@ const Skills = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
                 <div className="text-center p-4 bg-background/50 rounded-lg">
                   <p className="text-lg font-semibold text-muted-foreground">Problems Solved</p>
-                  <p className="text-4xl font-bold gradient-text">750+</p>
+                  <p className="text-4xl font-bold gradient-text">800+</p>
                 </div>
                 <div className="text-center p-4 bg-background/50 rounded-lg">
                   <p className="text-lg font-semibold text-muted-foreground">Highest Rating</p>

@@ -32,12 +32,12 @@ const Education = () => {
                       <strong>Major:</strong> Computer Science and Engineering
                     </p>
                     <p className="text-muted-foreground">
-                      <strong>Specialization:</strong> Technology
+                      <strong>Degree:</strong> Bachelor of Technology (B.Tech.)
                     </p>
                     <div className="flex items-center gap-2">
                       <Award className="h-4 w-4 text-primary" />
                       <Badge variant="default" className="bg-primary text-primary-foreground">
-                        CGPA: 94%
+                        CGPA: 9.38 / 10
                       </Badge>
                     </div>
                   </div>
@@ -53,7 +53,7 @@ const Education = () => {
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
                       <Calendar className="h-4 w-4" />
-                      <span>Expected May 2026</span>
+                      <span>Graduated May 2026</span>
                     </div>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ const Education = () => {
                   <div className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <span className="text-sm text-muted-foreground">
-                      Maintaining excellent academic performance with 94% CGPA
+                      Graduated with a CGPA of 9.38 / 10
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
@@ -77,13 +77,13 @@ const Education = () => {
                   <div className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <span className="text-sm text-muted-foreground">
-                      Strong foundation in computer science fundamentals
+                      Strong foundation in data structures, algorithms, DBMS, operating systems and computer networks
                     </span>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <span className="text-sm text-muted-foreground">
-                      Consistent academic excellence throughout the program
+                      Intermediate – Narayana Junior College, 98% (2022)
                     </span>
                   </div>
                 </div>

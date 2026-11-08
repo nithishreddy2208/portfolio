@@ -33,18 +33,18 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto">
-            Software Engineer specializing in Full Stack Development, AI Integrations, and Scalable Web Applications
+            Full Stack AI Engineer building end-to-end applications with Java, Spring Boot, Node.js and React, and the AI that powers them
           </p>
-          
+
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Passionate about building innovative web applications with modern technologies. 
-            Currently pursuing B.Tech with 94% CGPA at CVR College of Engineering.
+            Software Engineer I at Zapcom, shipping agentic AI features, RAG pipelines and scalable REST APIs.
+            B.Tech in Computer Science from CVR College of Engineering (CGPA 9.38) with 800+ LeetCode problems solved.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button asChild size="lg" className="btn-primary group">
-              <a href="https://github.com/nithishreddy2208?tab=repositories" target="_blank" rel="noopener noreferrer">
+              <a href="#projects">
                 View My Projects
                 <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
